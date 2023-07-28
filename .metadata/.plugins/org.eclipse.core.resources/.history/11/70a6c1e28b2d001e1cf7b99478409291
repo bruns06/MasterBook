@@ -1,0 +1,27 @@
+package com.example.presentation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.example.repos.PostDAO;
+
+@Controller
+public class ControllerMVC {
+
+	@Autowired
+	private PostDAO pDAO;
+	
+	@GetMapping({"/", "home", "index"})
+	public String home() {
+		return "index.html";
+	}
+	
+	@GetMapping("posts")
+	public String showTesti (Model m) {
+		m.addAttribute("testi", pDAO.findAll());
+		return "posts.html";
+	}
+	
+}

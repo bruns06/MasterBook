@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Nuovo post</title>
+	</head>
+	<body>
+		<h1>Aggiungi un post</h1>
+
+		 <div class="center">
+            <form id='myForm' method="post" action="nuovo-post">
+               <textarea name="contenuto" placeholder="Inserisci qui il tuo testo" cols="70" rows="30" ></textarea>                  
+               <button class="shadow results" type="submit">Salva post</button>       
+            </form>
+         </div>
+       
+	</body>
+</html>
