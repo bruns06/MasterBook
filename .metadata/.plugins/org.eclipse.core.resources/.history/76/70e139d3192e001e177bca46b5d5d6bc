@@ -1,0 +1,14 @@
+@charset "ISO-8859-1";
+
+#navbar span{
+	font-size: 1.5rem;
+}
+
+#navbar a{
+	text-decoration: none;
+	color: black;
+}
+
+#navbar{
+	background-color: #873e23;
+}

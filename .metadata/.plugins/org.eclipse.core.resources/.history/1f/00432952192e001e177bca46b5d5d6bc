@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+
+#navbar span{
+	font-size: 1.5rem;
+	border: 2px solid black;
+	background-color: red;
+}
+
+#navbar a{
+	text-decoration: none;
+	color: black;
+}

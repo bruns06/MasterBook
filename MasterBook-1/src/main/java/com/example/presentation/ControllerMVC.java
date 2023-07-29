@@ -36,6 +36,11 @@ public class ControllerMVC {
 		return "posts.html";
 	}
 	
+	@GetMapping("nuovo-post")
+	public String showPost (Model m) {
+		return "nuovo-post.html";
+	}
+	
 	//POST
 	
 	@PostMapping("/nuovo-post")

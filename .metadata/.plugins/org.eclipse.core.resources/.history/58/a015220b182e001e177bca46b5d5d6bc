@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Home</title>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><p>Home</p></li>
+				<li><p>Post</p></li>
+				<li><p>Nuovo-post</p></li>
+			</ul>
+		</nav>
+		<h1>Homepage</h1>
+	</body>
+</html>

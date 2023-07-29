@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+
+.center{
+	text-align: center;
+}
+
+button{
+	position: relative;
+	top: 50px;
+	right: 550px;
+}
