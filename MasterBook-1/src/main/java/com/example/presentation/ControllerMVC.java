@@ -8,7 +8,9 @@ package com.example.presentation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import com.example.entities.Post;
 import com.example.repos.PostDAO;
@@ -46,6 +48,17 @@ public class ControllerMVC {
 	@PostMapping("/nuovo-post")
 	public String addTesto(Post p) {
 		postService.addPost(p);
+		return "redirect:/posts";
+	}
+	
+	@DeleteMapping(value = "/delete-post/{id}")
+	public String deletePost(@PathVariable long id) {
+		postService.deletePost(id);
+		return "redirect:/posts.html";
+	}
+	
+	@GetMapping(value = "/delete-post/{id}")
+	public String showPost() {
 		return "redirect:/posts";
 	}
 	

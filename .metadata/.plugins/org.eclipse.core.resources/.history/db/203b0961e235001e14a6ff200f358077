@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+
+url = "https://example.com/delete-item/"
+
+const Delete = (id) => {
+
+    fetch(`https://example.com/delete-item/${id}`, {
+        method: "DELETE"
+    })
+        .then(() => {
+            navigate('/');
+        });
+
+}
+

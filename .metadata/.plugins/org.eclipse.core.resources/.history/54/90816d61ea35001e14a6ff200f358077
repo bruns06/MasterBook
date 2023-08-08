@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+
+url = "https://example.com/delete-item/"
+
+function deletePost() {
+             // Replace with the actual post ID you want to delete
+            fetch(`/delete-post/${id}`, {
+                method: 'DELETE',
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Post deleted successfully:', data);
+            })
+            .catch(error => {
+                console.error('Error deleting post:', error);
+            });
+            
+            return false;
+        }
+

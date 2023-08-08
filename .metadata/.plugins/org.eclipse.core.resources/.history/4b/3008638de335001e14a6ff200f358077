@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+
+url = "https://example.com/delete-item/"
+
+function Delete(id){
+
+    fetch(`localhost:2506/delete-post/${id}`, {
+        method: "DELETE"
+    })
+        .then(() => {
+            navigate('/');
+        });
+
+}
+

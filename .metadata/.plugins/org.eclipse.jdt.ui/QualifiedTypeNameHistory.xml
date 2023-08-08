@@ -14,7 +14,9 @@
     <fullyQualifiedTypeName name="com.example.repos.PostDAO"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
-    <fullyQualifiedTypeName name="com.example.entities.Post"/>
     <fullyQualifiedTypeName name="com.example.services.PostService"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.example.entities.Post"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 </qualifiedTypeNameHistroy>

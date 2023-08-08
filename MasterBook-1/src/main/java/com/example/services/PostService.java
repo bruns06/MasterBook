@@ -29,4 +29,8 @@ public class PostService {
 		return pDAO.findAll();
 	}
 	
+	public void deletePost(Long id) {
+		pDAO.deleteById(id);
+	}
+	
 }
